@@ -1,13 +1,16 @@
 ---
-import EjemploCoponente from '@/componentes/EjemploCoponente.astro';
+import EjemploComponente from '@/componentes/EjemploComponente.astro';
 import Plantilla from '@/plantillas/Plantilla.astro';
+import Cornisa from '@/componentes/Cornisa.astro';
 ---
 
 <Plantilla>
-  <main>
-    <h1>..:: Plantilla EnFlujo - Astro ::..</h1>
+  <Cornisa />
 
-    <EjemploCoponente titulo="Una base para empezar a usar Astro" contenido="¬ | ¬" />
+  <main>
+    <h1>Combustión espontánea exotérmica</h1>
+
+    <EjemploComponente titulo="Colectivo de experimentación e improvisación de imagen y sonido" contenido="Hola :)" />
   </main>
 </Plantilla>
 

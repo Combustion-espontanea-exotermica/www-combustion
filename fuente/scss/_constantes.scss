@@ -1,0 +1,49 @@
+// @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap');
+// @import url('https://use.typekit.net/xvu8mbx.css');
+
+:root {
+  /// Fuentes tipográficas hemochas
+  --fuenteParrafo: 'Arial', 'Tahoma', 'Verdana', sans-serif;
+  //  --fuenteParrafo: 'Inter', 'Helvetica', 'Roboto', 'Arial', 'Tahoma', 'Verdana', sans-serif;
+  //--fuenteNumeros: 'IBM Plex Mono', 'Courier New', monospace;
+  //--fuenteLogo: mixta-pro, 'Garamond', 'Georgia', 'Times', serif;
+
+  // Paleta
+  --negroDarks: #000000;
+  --magenta: #ff00ff;
+  --blancoNada: #ffffff;
+  --naranjaCombuster: #ff773e;
+  --moradoCombuster: #8b61ff;
+  --amarilloCombuster: #ffde24;
+
+  /// Medidas tamaños de pantallas
+  $corte1: 450px;
+  $corte2: 760px;
+  $corte3: 1000px;
+  $corte4: 1333px;
+  $minCelular: 576px;
+  $minTablet: 768px;
+  $minPantalla: 992px;
+  $minPantallaGrande: 1200px;
+  $minPantallaGigante: 1600px;
+}
+
+/// Texto
+p {
+  font-family: var(--fuenteParrafo);
+}
+
+::selection {
+  background-color: var(--magenta);
+  color: var(--blancoNada);
+}
+
+a,
+a:link {
+  color: var(--naranjaCombuster);
+  font-weight: bold;
+
+  &:hover {
+    color: var(--moradoCombuster);
+  }
+}

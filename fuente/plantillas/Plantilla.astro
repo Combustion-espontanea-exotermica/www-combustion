@@ -32,7 +32,6 @@ const altImg = imagen ? imagen.alt : nombreProyecto;
     <link rel="icon" href={new URL('favicon.svg', urlBase)} type="image/svg+xml" />
     <link rel="apple-touch-icon" href={new URL('apple-touch-icon.png', urlBase)} />
     <meta name="generator" content={Astro.generator} />
-
     <link rel="canonical" href={urlPagina} />
 
     <!-- lo que traje del manual https://github.com/enflujo/enflujo-bases -->
@@ -75,4 +74,5 @@ const altImg = imagen ? imagen.alt : nombreProyecto;
 
 <style lang="scss" is:global>
   @use '@/scss/estilos.scss';
+  @use '@/scss/constantes';
 </style>
