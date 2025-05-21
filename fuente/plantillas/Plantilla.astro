@@ -7,8 +7,9 @@ interface Props {
 
 const { titulo, descripcion, imagen } = Astro.props;
 
-const nombreProyecto = 'EnFlujo';
-const descripcionGeneral = 'Este proyecto...';
+const nombreProyecto = 'Combustión espontánea exotérmica';
+const descripcionGeneral =
+  'Colectivo de experimentación audiovisual que fusiona la imagen en vivo con diversas disciplinas artísticas, especialmente la música.';
 const { pathname } = Astro.url;
 const tituloSEO = titulo ? `${titulo} | ${nombreProyecto}` : nombreProyecto;
 const descripcionSEO = descripcion || descripcionGeneral;
@@ -22,16 +23,29 @@ const altImg = imagen ? imagen.alt : nombreProyecto;
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Descripción de la página" />
+    <meta
+      name="description"
+      content="Colectivo de experimentación audiovisual que fusiona la imagen en vivo con diversas disciplinas artísticas, especialmente la música."
+    />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" href={new URL('favicon.ico', urlBase)} sizes="32x32" />
     <link rel="icon" href={new URL('favicon.svg', urlBase)} type="image/svg+xml" />
     <link rel="apple-touch-icon" href={new URL('apple-touch-icon.png', urlBase)} />
     <meta name="generator" content={Astro.generator} />
+
     <link rel="canonical" href={urlPagina} />
 
+    <!-- lo que traje del manual https://github.com/enflujo/enflujo-bases -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/sitio.webmanifest" />
+
     <title>{tituloSEO}</title>
-    <meta name="description" content="Descripción del sitio...." />
+    <meta
+      name="description"
+      content="Colectivo de experimentación audiovisual que fusiona la imagen en vivo con diversas disciplinas artísticas, especialmente la música"
+    />
     <!-- OpenGraph -->
     <meta property="og:locale" content="es_CO" />
     <meta property="og:site_name" content={nombreProyecto} />
@@ -45,8 +59,8 @@ const altImg = imagen ? imagen.alt : nombreProyecto;
     <meta property="og:image:height" content="630" />
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@labenflujo" />
-    <meta name="twitter:creator" content="@labenflujo" />
+    <meta name="twitter:site" content="@combustiones.pontanea" />
+    <meta name="twitter:creator" content="@combustiones.pontanea" />
     <meta name="twitter:url" content={urlPagina} />
     <meta name="twitter:title" content={tituloSEO} />
     <meta name="twitter:description" content={descripcionSEO} />
