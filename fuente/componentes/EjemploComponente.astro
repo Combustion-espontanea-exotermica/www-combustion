@@ -7,9 +7,20 @@ interface Props {
 const { titulo, contenido } = Astro.props;
 ---
 
-<section>
-  <h3>{titulo}</h3>
-  <p>{contenido}</p>
-</section>
+<section></section>
 
-<style lang="scss"></style>
+<style lang="scss">
+  main {
+    height: 100vh;
+    h1 {
+      height: 100%;
+      font-family: var(--fuenteInicio);
+      font-size: 2em;
+      background-color: var(--negroDarks);
+      color: var(--blancoNada);
+    }
+  }
+
+  h3 {
+  }
+</style>
